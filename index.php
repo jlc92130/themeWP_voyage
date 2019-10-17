@@ -16,7 +16,7 @@
   <section id="navbar">
     <div class="container p-2">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand mr-5" href="#"> <img src="imgs/logo.png"> </a>
+        <a class="navbar-brand mr-5" href="#"> <img src="<?php bloginfo('template_directory');?>/imgs/logo.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +50,7 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active mx-auto">
-      <img class="d-block w-100" src="imgs/slider-bg.jpg" alt="First slide">
+      <img class="d-block w-100" src="<?php bloginfo('template_directory');?>/imgs/slider-bg.jpg" alt="First slide">
       <div class="carousel-caption align-content-center">
         <div class="min-vh-100 container d-flex flex-column align-content-center">
           <div class="row flex-grow-1 justify-content-center align-items-center">
@@ -141,7 +141,7 @@
         <div class="flex-viewport" style="overflow: hidden; position: relative;">
           <ul class="slides" style="width: 2400%; transition-duration: 1s; transform: translate3d(0px, 0px, 0px);">
             <li onclick="location.href='#';" style="width: 240.4px; float: left; display: block;">
-              <img src="imgs/p1.png">
+              <img src="<?php bloginfo('template_directory');?>/imgs/p1.png">
                 <div class="caption-info">
                  <div class="caption-info-head">
                   <div class="caption-info-head-left">
