@@ -140,6 +140,9 @@
       <div class="flexslider carousel">
         <div class="flex-viewport" style="overflow: hidden; position: relative;">
           <ul class="slides" style="width: 2400%; transition-duration: 1s; transform: translate3d(0px, 0px, 0px);">
+
+
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li onclick="location.href='#';" style="width: 240.4px; float: left; display: block;">
               <img src="<?php bloginfo('template_directory');?>/imgs/p1.png">
                 <div class="caption-info">
@@ -155,7 +158,11 @@
                     </div>
                 </div>
             </li>
-            <li onclick="location.href='#';" style="width: 240.4px; float: left; display: block;">
+          <?php endwhile; else: ?>
+           <p>Sorry, no posts matched your criteria.</p>
+           <?php endif; ?>
+
+            <!-- <li onclick="location.href='#';" style="width: 240.4px; float: left; display: block;">
               <img src="imgs/p2.png">
                 <div class="caption-info">
                  <div class="caption-info-head">
@@ -319,7 +326,7 @@
                     <div class="clear"> </div>
                     </div>
                 </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -416,7 +423,7 @@
 					<h3>Latest News </h3>
 					<div class="news">
 						<div class="news-pic">
-							<img src="imgs/f01.jpg" title="news-pic1">
+							<img src="<?php bloginfo('template_directory');?>/imgs/f01.jpg" title="news-pic1">
 						</div>
 						<div class="news-info">
 							<a href="#">Postformat Gallery: Multiple images</a>
@@ -426,7 +433,7 @@
 					</div>
 					<div class="news">
 						<div class="news-pic">
-							<img src="imgs/f01.jpg" title="news-pic1">
+							<img src="<?php bloginfo('template_directory');?>/imgs/f01.jpg" title="news-pic1">
 						</div>
 						<div class="news-info">
 							<a href="#">Postformat Gallery: Multiple images</a>
