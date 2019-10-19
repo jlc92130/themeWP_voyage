@@ -144,7 +144,8 @@
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li onclick="location.href='#';" style="width: 240.4px; float: left; display: block;">
-              <img src="<?php bloginfo('template_directory');?>/imgs/p1.png">
+              <img src="<?php the_post_thumbnail();?>/imgs/p1.png">
+            <!--  imgs/p1.png  on recupere les images -->
                 <div class="caption-info">
                  <div class="caption-info-head">
                   <div class="caption-info-head-left">
